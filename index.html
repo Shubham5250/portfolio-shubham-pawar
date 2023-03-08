@@ -133,12 +133,16 @@
 
             <div class="tab-section">
               <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links" onclick="opentab('education')"></p>>Education</p>
-                <p class="tab-links" onclick="opentab('clubs')"></p>>Clubs</p>
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+                <p class="tab-links" onclick="opentab('clubs')">Clubs</p>
               </div>
               <hr />
-              <div class="tab-content active-tab" id="skills">
+              <div class="tab-contents active-tab" id="skills">
                 <ul>
                   <li>
                     <span>Android Development</span><br />I develop Android apps
@@ -154,35 +158,34 @@
                   </li>
                 </ul>
               </div>
-              <div class="tab-content" id="education">
+              <div class="tab-contents" id="education">
                 <ul>
                   <li>
-                    <span>Android Development</span><br />I develop Android apps
-                    in Java
+                    <span>PES Modern College of Engineering</span><br />B.E
+                    (2021 - present), 8.9 GPA 1st year
                   </li>
                   <li>
-                    <span>Webpage Development</span><br />Develop the webpages
-                    using HTML, CSS & JavaScript.
+                    <span>Urmi School & Hostel, Vadodara</span><br />H.Sc (2013
+                    - 2021), 89% CBSE.
                   </li>
-                  <li>
-                    <span>UI / UX</span><br />Developing the simple UI & UX for
-                    the android app.
-                  </li>
+                  <li><span>Parner Public School</span><br />(2007-2013)</li>
                 </ul>
               </div>
-              <div class="tab-content" id="clubs">
+              <div class="tab-contents" id="clubs">
                 <ul>
                   <li>
-                    <span>Android Development</span><br />I develop Android apps
-                    in Java
+                    <span
+                      >Google Developers Student Clubs (Aug 2022 -
+                      Present)</span
+                    ><br />Web Development Team, Member.
                   </li>
                   <li>
-                    <span>Webpage Development</span><br />Develop the webpages
-                    using HTML, CSS & JavaScript.
+                    <span>Rotaract Club (Sept 2022 - Present)</span><br />Public
+                    Relations Officer (PRO).
                   </li>
                   <li>
-                    <span>UI / UX</span><br />Developing the simple UI & UX for
-                    the android app.
+                    <span>MARS Club (Jan 2022 - Dec 2021)</span><br />CS/IT
+                    Team, Member.
                   </li>
                 </ul>
               </div>
@@ -193,22 +196,19 @@
     </div>
 
     <script>
-
       var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-content");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
       function opentab(tabname) {
-        for(tablink of tablinks){
+        for (tablink of tablinks) {
           tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
+        for (tabcontent of tabcontents) {
           tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
-
     </script>
-
   </body>
 </html>

@@ -182,7 +182,7 @@ span{
     padding: 30px 0;
 }
 .row{
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -326,7 +326,7 @@ span{
 
 .projects-list div a{
     text-decoration: none;
-    color: #ffff;
+    color: #ffffff;
     font-size: 17px;
     margin-top: 20px;
     display: inline-block;
@@ -337,8 +337,18 @@ span{
     transform: translateY(-10px);
 }
 
+/* ---------- projects illustrations styling ------------- */
+
+.projects-illustrations{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
 
 .myVideo {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -354,4 +364,140 @@ span{
 .work video{
     display: block;
     border-radius: 15px;
+    transition: 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.7), #019bd4);
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    color: #fff;
+    transition: height 0.5s;
+}
+
+.layer h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.layer p{
+    font-size: 1.2rem;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #2fc7ff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover video{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+/* --------------- CONTACT ME ------------- */
+
+#contact{
+    padding: 30px 0;
+}
+/* contact left styling */
+
+.contact-left{
+    flex-shrink: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    font-size: 1.1rem;
+    color: gray;
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #019bd4;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-right: 15px;
+    color: #000;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #0094c9;
+    transform: translateY(-5px);
+}
+
+/* contact form right styling */
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #e9e9e9;
+    padding: 26px;
+    margin: 15px 0;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.btn{
+    border: none;
+    padding: 14px 60px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* -------- Copyright styling ------- */
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #e9e9e9;
+    font-weight: 300;
+    font-size: 1.04rem;
+    margin-top: 20px;
+}
+
+.copyright i{
+    color: red;
 }

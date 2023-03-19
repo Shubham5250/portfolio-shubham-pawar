@@ -27,7 +27,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#home">Certifications</a></li>
-            <li><a href="#home">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 
@@ -218,7 +218,7 @@
               domains. Tried to keep the UI user-freindly and had some
               animations in it.
             </p>
-            <a href="#">Learn more</a>
+            <a href="#quiz">Learn more</a>
           </div>
 
           <div>
@@ -229,7 +229,7 @@
               domains. Tried to keep the UI user-freindly and had some
               animations in it.
             </p>
-            <a href="#">Learn more</a>
+            <a href="#food">Learn more</a>
           </div>
 
           <div>
@@ -240,7 +240,7 @@
               domains. Tried to keep the UI user-freindly and had some
               animations in it.
             </p>
-            <a href="#">Learn more</a>
+            <a href="#weather">Learn more</a>
           </div>
         </div>
       </div>
@@ -251,24 +251,39 @@
     <div id="projects">
       <div class="container">
         <h2 class="sub-title">Projects Illustrations</h2>
-        <div class="projects-list">
+        <div class="projects-illustrations">
           <!-- codex app video illustration -->
-          <div class="work">
+          <div class="work" id="quiz">
             <video autoplay muted loop class="myVideo">
               <source src="videos/codex_app.mp4" type="video/mp4" />
             </video>
             <div class="layer">
               <h1>Codex-The Quiz App</h1>
+              <p>
+                Test your general technology knowledge by solving the quizzes
+                with 8 different domains included. User-freindly UI and
+                animations make this app better to use.
+              </p>
+              <a
+                href="https://github.com/Shubham5250/codex-coding-app.git"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
           </div>
 
-          <div class="work">
+          <div class="work" id="food">
             <div class="layer">
               <h1>MyMeal-Food Delivey App</h1>
+              <a
+                href="https://github.com/Shubham5250/Food-Delivery-App.git"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
           </div>
 
-          <div class="work">
+          <div class="work" id="weather">
             <video autoplay muted loop class="myVideo">
               <source src="videos/weather.mp4" type="video/mp4" />
             </video>
@@ -279,9 +294,77 @@
                 toolkit. This app fetches the live weather data with help of
                 OpenWeather API.
               </p>
+              <a
+                href="https://github.com/Shubham5250/flutter-forward-extended.git"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- contact me section -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i
+              >shubhampaw312@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+91 9316226141</p>
+            <div class="social-icons">
+              <a href="https://github.com/Shubham5250" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://twitter.com/ShubhamPawar93" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/shubhampawar99/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://medium.com/@shubhampawar99" target="_blank"
+                ><i class="fa-brands fa-medium"></i
+              ></a>
+              <a
+                href="https://stackoverflow.com/users/20764502/shubham-pawar"
+                target="_blank"
+                ><i class="fa-brands fa-stack-overflow"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Your message"
+                required
+              ></textarea>
+              <button class="download_cv btn" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ Shubham. Made with <i class="fa-solid fa-heart"></i> by
+          Shubham Pawar.
+        </p>
       </div>
     </div>
 

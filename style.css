@@ -196,6 +196,7 @@ span{
     border-radius: 50%;
 }
 
+
 .about-col-2{
     flex-basis: 60%;
 }
@@ -203,6 +204,7 @@ span{
 .sub-title{
     
     font-size: 30px;
+    /* align-items: center; */
 }
 .section_subtitle{
     text-align: center;
@@ -215,6 +217,11 @@ span{
     border-radius: 9px;
     border: rgb(125, 125, 125) solid 1px;
 }
+.about_me:hover{
+    transform: scale3d(1.02,1.02,1.02);
+    transition: 0.6s;
+    box-shadow:0 0 7px rgb(165, 165, 165);
+}
 .about_me p{
     margin: 10px;
     font-size: 18px;
@@ -223,10 +230,16 @@ span{
 
 }
 .tab-section{
-    border: #000 solid 1px;
+    border: rgb(125, 125, 125) solid 1px;
     border-radius: 8px;
+    
     margin-top: 25px;
     padding: 25px;
+}
+.tab-section:hover{
+    transform: scale3d(1.02,1.02,1.02);
+    transition: 0.6s;
+    box-shadow:0 0 7px rgb(165, 165, 165);
 }
 .tab-titles{
     display: flex;
@@ -253,12 +266,12 @@ span{
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 60%;
 }
 
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 20px 0;
     font-size: 16px;
 }
 

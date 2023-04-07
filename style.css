@@ -8,9 +8,14 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --color-white: #fff;
+    --color-dark: #181a18;
+}
+
 body {
     font-size: 10px;
-    background: #f8fbff;
+    background: var(--color-white);
     overflow-x: hidden;
 }
 
